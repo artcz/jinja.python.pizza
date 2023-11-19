@@ -16,7 +16,7 @@ from jinja2 import Environment, FileSystemLoader
 
 class Pizza:
     title = "Random Python Pizza"
-    location = "Acme office, Office buildin, Street Name 13/37"
+    location = "Acme office, Office building, Street Name 13/37"
     date = date(2024, 2, 24)
 
     template_path = Path("../templates")
@@ -37,12 +37,10 @@ with open(Pizza.schedule_file) as fd:
     data = csv.DictReader(fd)
     Pizza.schedule = [Pizza.ScheduleItem(**row) for row in data]
 
-
 # Sponsors section
 with open(Pizza.sponsors_file) as fd:
     data = csv.DictReader(fd)
     Pizza.sponsors = [Pizza.Sponsor(**row) for row in data]
-
 
 # Set up Jinja environment
 loader = FileSystemLoader(Pizza.template_path)
