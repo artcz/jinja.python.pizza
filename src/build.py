@@ -15,8 +15,8 @@ from jinja2 import Environment, FileSystemLoader
 
 
 class Pizza:
-    title = "Prague Python Pizza"
-    location = "Apify office, Lucerna Palace, Vodickova 704/36"
+    title = "Random Python Pizza"
+    location = "Acme office, Office buildin, Street Name 13/37"
     date = date(2024, 2, 24)
 
     template_path = Path("../templates")
