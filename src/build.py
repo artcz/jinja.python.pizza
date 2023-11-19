@@ -33,19 +33,15 @@ class Pizza:
 
 
 # Build Schedule
-Pizza.schedule = []
 with open(Pizza.schedule_file) as fd:
     data = csv.DictReader(fd)
-    for row in data:
-        Pizza.schedule.append(Pizza.ScheduleItem(**row))
+    Pizza.schedule = [Pizza.ScheduleItem(**row) for row in data]
 
 
 # Sponsors section
-Pizza.sponsors = []
 with open(Pizza.sponsors_file) as fd:
     data = csv.DictReader(fd)
-    for row in data:
-        Pizza.sponsors.append(Pizza.Sponsor(**row))
+    Pizza.sponsors = [Pizza.Sponsor(**row) for row in data]
 
 
 # Set up Jinja environment
