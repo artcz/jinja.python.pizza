@@ -19,17 +19,17 @@ class Pizza:
     location = "Apify office, Lucerna Palace, Vodickova 704/36"
     date = date(2024, 2, 24)
 
-    template_path = Path("./templates")
+    template_path = Path("../templates")
 
     # Sponsor Data
     Sponsor = namedtuple("Sponsor", "name logo url")
-    sponsors_file = Path("./data/sponsors.csv")
+    sponsors_file = Path("../data/sponsors.csv")
 
     # Program Data
     ScheduleItem = namedtuple(
         "ScheduleItem", "time name speaker_name speaker_social speaker_photo css_class"
     )
-    schedule_file = Path("./data/schedule.csv")
+    schedule_file = Path("../data/schedule.csv")
 
 
 # Build Schedule

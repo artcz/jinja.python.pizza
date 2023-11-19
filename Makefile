@@ -1,10 +1,10 @@
 .PHONY: build
 build:
-	python build.py > build/index.html
+	cd src && python build.py > ../build/index.html
 
 
 watch:
-	when-changed -r templates data/ build.py -1s -c make build
+	when-changed -r templates/ data/ src/ -1s -c make build
 
 serve:
 	cd build && python -m http.server 9090
