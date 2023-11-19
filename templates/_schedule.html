@@ -1,0 +1,13 @@
+<h2>Schedule</h2>
+
+{% for entry in pizza.schedule %}
+<div class="entry {{ entry.css_class }} {% if loop.index % 2 == 0 %}picture_left{% endif %}">
+    <span class="time">{{ entry.time }}</span>
+    <div class="talk">
+        <span class="title">{{ entry.name }}</span>
+        {% if entry.speaker_name %}<br><span class="speaker_name">{{ entry.speaker_name }}</span>{% endif %}
+    </div>
+    {% if entry.speaker_photo %}<img width=80 height=80 src="/images/speakers/{{ entry.speaker_photo }}">{% endif %}
+    <div style="clear: both;"></div>
+</div>
+{% endfor %}

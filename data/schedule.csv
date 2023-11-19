@@ -1,0 +1,8 @@
+time,css_class,name,speaker_name,speaker_social,speaker_photo
+10:00,opening,Opening Session,,,
+10:30,keynote,Keynote #1,Keynote Speaker,@keynotespeaker,keynotespeaker2.png
+11:10,coffee_break,Coffee Break,,,
+10:30,talk,"This is a random Talk about async","Async Person",@asyncperson,async.png
+10:40,talk,"How to add more tests to your codebase","Random Tester",@randomtester,RandomTester.png
+10:50,talk,"Using Python for Data Science","A Data Person, PhD",@dataperson,DataPersonPhd.png
+13:00,pizza_break,Pizza Break,,,

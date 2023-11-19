@@ -1,0 +1,7 @@
+<div id="sponsors">
+    <h2>Sponsors</h2>
+    {% for sponsor in pizza.sponsors %}
+    <a href='{{ sponsor.url }}'><img width=100 height=100 alt="{{ sponsor.name }}" src="/images/sponsors/{{ sponsor.logo }}"></a>
+    {% endfor %}
+    <p>If you would like to sponsor the event, please send us an <a href='#'>email</a></p>
+</div>
