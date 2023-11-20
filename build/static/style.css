@@ -1,0 +1,56 @@
+body {
+    background: #fdc;
+    font-family: sans-serif;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    text-align: left;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h2 { color: red; }
+
+#header {
+    background: red;
+    color: white;
+}
+
+#header h1, #header h2, #header h3 {
+    color: white;
+}
+
+.opening { background: lightblue; }
+.keynote { background: purple; }
+.coffee_break { background: brown; }
+.pizza_break { background: orange; }
+
+img { margin: .5em; }
+
+.entry {
+    margin: 0 auto;
+    border: 1px dashed #aaa;
+    width: 800px;
+ }
+
+.entry img {
+    border-radius: 50%;
+}
+
+
+.entry .speaker_name {
+    color: #aaa;
+}
+
+
+.entry .time { font-size: 1.5em; padding: 1em; }
+.entry .time { float: left; }
+.entry img { float: right; }
+.entry.picture_left .time { float: right; }
+.entry.picture_left img { float: left; }
