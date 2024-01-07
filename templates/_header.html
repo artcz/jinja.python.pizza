@@ -1,5 +1,8 @@
 <div id="header">
-    <nav>
+    <nav class="navbar">
+        <p>
+            <img src="images/logo.svg" />
+        </p>
         <ul>
             <li><a href='#about'>About 🍕</a></li>
             <li><a href='#sponsors'>Sponsors</a></li>
@@ -11,4 +14,13 @@
     <h1>{{ pizza.title }}</h1>
     <h2>{{ pizza.location }}</h2>
     <h3>{{ pizza.date.strftime("%dth %B %Y") }}</h3>
+<div class="wave">
+    <svg
+      x="0px"
+      y="0px"
+      viewBox="0 0 4320 160"
+    >
+      <path d="M0,160V0c576,0,864,156,1440,156S2304,0,2880,0s864,156,1440,156c1,0,0,4,0,4H0z" />
+    </svg>
+</div>
 </div>
